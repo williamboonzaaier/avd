@@ -31,4 +31,4 @@ namespace Win32{
 add-type $code 
 [Win32.Wallpaper]::SetWallpaper($MyWallpaper)
 
-Copy-Item "Z:\Shared files\Install software\layoutmodification.xml" -Destination "C:\Users\Default\AppData\Local\Microsoft\Windows\Shell"
+Copy-Item "Z:\Shared files\Install software\layoutmodification.xml" -Destination "C:\Users\$env:username\AppData\Local\Microsoft\Windows\Shell"
